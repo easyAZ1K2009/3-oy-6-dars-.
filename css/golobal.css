@@ -1,0 +1,195 @@
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* fonts */
+
+  --headar-font-femliy: "fraunces", serif;
+  --main-font-family: "barlow", sans-serif;
+
+  /* colors */
+
+  --Dark-Cyan: #0e8784;
+  --Dark-Grey-Blue: #333d4b;
+  --Pale-Orange: #fdd6ba;
+  --Light-Cream: #fefcf7;
+  --Grey: #83888f;
+
+  /* buuton coler */
+
+  --Main-Button-Hover: #0e8784;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font-femliy);
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headar-font-femliy);
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.Header__container {
+  display: flex;
+  align-items: center;
+  gap: 721px;
+  margin-top: 50px;
+}
+
+.link ul {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.link ul a {
+  color: var(--Grey);
+  font-family: var(--main-font-femliy);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  &:hover {
+    color: var(--Dark-Grey-Blue);
+  }
+}
+
+/* Footer */
+
+.Footer__container {
+  width: 1280px;
+  height: 120px;
+  flex-shrink: 0;
+  background: #2c343e;
+  padding: 47px 85px;
+  margin-bottom: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.logo2 {
+  margin-right: 102px;
+}
+
+.Fonts ul {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+  gap: 20px;
+}
+
+.Fonts svg path {
+  fill: #fff;
+  transition: all 0.4s;
+}
+
+.Fonts svg path:hover {
+  fill: #fdd6ba;
+}
+
+.Footer__menu ul {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.Footer__menu a {
+  color: var(--Grey);
+  font-family: var(--main-font-femliy);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  &:hover {
+    color: var(--Light-Cream);
+  }
+}

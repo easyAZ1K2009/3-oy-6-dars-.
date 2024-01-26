@@ -1,0 +1,70 @@
+/* Hero */
+
+.Hero__container {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  width: 1280px;
+  height: 450px;
+  padding: 94px 0px 32px 85px;
+  margin-top: 48px;
+  border-radius: 15px;
+}
+
+.Hero__container h1 {
+  color: #fff;
+}
+
+.Hero__container p {
+  color: #fff;
+  width: 445px;
+  opacity: 0.8;
+  font-family: var(--main-font-femliy);
+}
+
+/* Section2 */
+
+.Section2__container {
+  margin-top: 180px;
+  margin-bottom: 200px;
+  background-color: #2c343e;
+  padding: 110px 0 100px 85px;
+}
+
+.images {
+  display: flex;
+  gap: 349px;
+}
+
+.Smel {
+  margin-top: -15px;
+}
+
+.img {
+  height: 3px;
+  margin-left: -1125px;
+}
+
+.Section2__pusks {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+  margin-bottom: 64px;
+}
+
+.Section2__pusks h1 {
+  color: var(--Pale-Orange);
+  font-family: var(--headar-font-femliy);
+  margin-bottom: 32px;
+}
+
+.Section2__pusks h3 {
+  width: 255px;
+  color: #fff;
+  margin-bottom: 42px;
+  font-family: var(--headar-font-femliy);
+}
+
+.Section2__pusks p {
+  width: 285px;
+  color: #fff;
+  font-family: var(--main-font-femliy);
+}
